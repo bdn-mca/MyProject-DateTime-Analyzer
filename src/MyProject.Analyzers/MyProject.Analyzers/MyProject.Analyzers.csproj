@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>MCA.Boss.Analyzers</PackageId>
+    <!-- Do not change the version! Let it stay on 0.0.0. It will be automatically changed in the build definition -->
+    <PackageVersion>0.0.0</PackageVersion>
+    <Authors>MCA</Authors>
+    <PackageLicenseUrl>http://mca.mk</PackageLicenseUrl>
+    <PackageProjectUrl>https://tfs.mca.mk/DefaultCollection/BOSS/_git/MCA.Boss.Analyzers</PackageProjectUrl>
+    <RepositoryUrl>https://tfs.mca.mk/DefaultCollection/BOSS/_git/MCA.Boss.Analyzers</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>This package runs static code analysis, and offers fixes for the problems it encounters. For example, if it encounters a DateTime in code, it will offer to fix it into BossDateTime.</Description>
+    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageTags>MCA Static Analyzer Boss MCA.Boss.Analyzers</PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="2.4.0" PrivateAssets="all" />
+    <PackageReference Update="NETStandard.Library" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs" DesignTime="True" AutoGen="True" DependentUpon="Resources.resx" />
+    <EmbeddedResource Update="Resources.resx" Generator="ResXFileCodeGenerator" LastGenOutput="Resources.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
+
+</Project>
