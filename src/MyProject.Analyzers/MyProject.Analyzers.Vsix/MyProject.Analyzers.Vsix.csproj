@@ -34,8 +34,8 @@
     <ProjectGuid>{CD51B2C9-F6CE-49F4-9211-53B494F1F1D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MCA.Boss.Analyzers.Vsix</RootNamespace>
-    <AssemblyName>MCA.Boss.Analyzers</AssemblyName>
+    <RootNamespace>MyProject.Analyzers.Vsix</RootNamespace>
+    <AssemblyName>MyProject.Analyzers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>

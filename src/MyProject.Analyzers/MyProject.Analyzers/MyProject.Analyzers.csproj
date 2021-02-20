@@ -7,18 +7,18 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>MCA.Boss.Analyzers</PackageId>
+    <PackageId>MyProject.Analyzers</PackageId>
     <!-- Do not change the version! Let it stay on 0.0.0. It will be automatically changed in the build definition -->
     <PackageVersion>0.0.0</PackageVersion>
-    <Authors>MCA</Authors>
-    <PackageLicenseUrl>http://mca.mk</PackageLicenseUrl>
-    <PackageProjectUrl>https://tfs.mca.mk/DefaultCollection/BOSS/_git/MCA.Boss.Analyzers</PackageProjectUrl>
-    <RepositoryUrl>https://tfs.mca.mk/DefaultCollection/BOSS/_git/MCA.Boss.Analyzers</RepositoryUrl>
+    <Authors>Author</Authors>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>This package runs static code analysis, and offers fixes for the problems it encounters. For example, if it encounters a DateTime in code, it will offer to fix it into BossDateTime.</Description>
-    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
-    <Copyright>Copyright 2018</Copyright>
-    <PackageTags>MCA Static Analyzer Boss MCA.Boss.Analyzers</PackageTags>
+    <Description></Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright></Copyright>
+    <PackageTags></PackageTags>
     <NoPackageAnalysis>true</NoPackageAnalysis>
   </PropertyGroup>
 
